@@ -82,7 +82,7 @@ import { useSelector } from "react-redux";
 
   return (
     <form onSubmit={handleSubmit(submit)} className="flex flex-wrap">
-      <div className="w-2/3 px-2">
+      <div className="w-2/3 px-2 bg-gray-200 rounded-l">
         <Input
           label="Title :"
           placeholder="Title"
@@ -107,7 +107,7 @@ import { useSelector } from "react-redux";
           defaultValue={getValues("content")}
         />
       </div>
-      <div className="w-1/3 px-2">
+      <div className="w-1/3 px-2 bg-gray-200 rounded-r">
         <Input
           label="Featured Image :"
           type="file"

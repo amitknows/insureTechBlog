@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom'
 function Postcard({$id, title, featuredImage}) {
   return (
     <Link to={`/post/${$id}`}>
-        <div className='w-full bg-gray-100 rounded-xl p-4'>
-            <div className='w-full justify-center mb-4'>
-                <img src={appwriteService.getFilePreview(featuredImage)} alt={title} className='rounded-xl'/>
+        <div className='max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'>
+            <div className=''>
+                <img src={appwriteService.getFilePreview(featuredImage)} alt={title} className='rounded-t-lg '/>
              </div>
-             <h2 className='text-xl font-bold'> {title}</h2>
+             <h2 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'> {title}</h2>
         </div>
     </Link>
   )
