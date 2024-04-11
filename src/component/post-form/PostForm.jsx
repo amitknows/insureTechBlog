@@ -67,7 +67,7 @@ import { useSelector } from "react-redux";
         .trim()
         .toLowerCase()
         .replace(/[^a-zA-Z\d\s]+/g, "-")
-        .replace((/\s/g, "-"));
+        .replace(/\s/g, "-");
     return "";
   }, []);
 
