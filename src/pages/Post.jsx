@@ -37,6 +37,7 @@ export default function Post() {
   return post ? (
     <div className="py-8">
       <Container>
+        
         <div>
           <h5 className=" text-center mb-4 text-6xl font-bold">{post.title}</h5>
         </div>
